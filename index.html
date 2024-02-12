@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.js">
+</head>
+<body>
+    <div id="myfirstchart" style="height: 250px;"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script>Morris.Line({
+        element: 'myfirstchart',
+        data: [
+          { year: '2008', value: 20 },
+          { year: '2009', value: 10 },
+          { year: '2010', value: 5 },
+          { year: '2011', value: 5 },
+          { year: '2012', value: 20 }
+        ],
+        xkey: 'year',
+        ykeys: ['value'],
+        labels: ['Value']
+      });
+      </script>
+</body>
+</html>
